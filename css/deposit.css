@@ -1,0 +1,451 @@
+/* =========================================
+DEPOSIT PAGE
+========================================= */
+
+.deposit-page {
+padding: 30px;
+min-height: 100vh;
+}
+
+.deposit-container {
+max-width: 800px;
+margin: 0 auto;
+}
+
+/* =========================================
+PAGE HEADER
+========================================= */
+
+.deposit-header {
+margin-bottom: 25px;
+}
+
+.deposit-header h2 {
+margin: 0 0 8px;
+font-family: 'Noto Sans Bengali', sans-serif;
+}
+
+.deposit-header p {
+margin: 0;
+color: #777;
+font-family: 'Noto Sans Bengali', sans-serif;
+font-size: 15px;
+}
+
+/* =========================================
+DEPOSIT FORM CARD
+========================================= */
+
+.deposit-form-card {
+background: #ffffff;
+border-radius: 15px;
+padding: 30px;
+box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================================
+FORM GROUP
+========================================= */
+
+.deposit-form-group {
+margin-bottom: 22px;
+}
+
+.deposit-form-group label {
+display: block;
+margin-bottom: 8px;
+font-family: 'Noto Sans Bengali', sans-serif;
+font-weight: 600;
+}
+
+/* =========================================
+FORM INPUTS
+========================================= */
+
+.deposit-form-group input,
+.deposit-form-group textarea,
+.deposit-form-group select {
+width: 100%;
+box-sizing: border-box;
+
+
+padding: 13px 15px;
+
+border: 1px solid #ddd;
+border-radius: 8px;
+
+background: #ffffff;
+
+font-family: 'Noto Sans Bengali', sans-serif;
+font-size: 15px;
+
+outline: none;
+
+transition: 0.2s;
+
+
+}
+
+.deposit-form-group input:focus,
+.deposit-form-group textarea:focus,
+.deposit-form-group select:focus {
+border-color: #2ecc71;
+box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.1);
+}
+
+/* =========================================
+TEXTAREA
+========================================= */
+
+.deposit-form-group textarea {
+min-height: 100px;
+resize: vertical;
+}
+
+/* =========================================
+MEMBER SELECT
+========================================= */
+
+.member-select-wrapper {
+position: relative;
+}
+
+.member-select-wrapper select {
+appearance: none;
+-webkit-appearance: none;
+-moz-appearance: none;
+
+
+padding-right: 45px;
+
+cursor: pointer;
+
+
+}
+
+.member-select-wrapper i {
+position: absolute;
+
+
+right: 15px;
+top: 50%;
+
+transform: translateY(-50%);
+
+pointer-events: none;
+
+color: #777;
+
+
+}
+
+/* =========================================
+DEPOSIT BUTTON
+========================================= */
+
+.deposit-button {
+width: 100%;
+
+
+border: none;
+border-radius: 8px;
+
+padding: 14px;
+
+cursor: pointer;
+
+background: #2ecc71;
+color: #ffffff;
+
+font-family: 'Noto Sans Bengali', sans-serif;
+font-size: 16px;
+font-weight: 600;
+
+transition: 0.2s;
+
+
+}
+
+.deposit-button:hover {
+opacity: 0.9;
+transform: translateY(-1px);
+}
+
+/* =========================================
+ERROR / MESSAGE
+========================================= */
+
+.deposit-message {
+padding: 12px 15px;
+margin-bottom: 20px;
+
+
+border-radius: 8px;
+
+font-family: 'Noto Sans Bengali', sans-serif;
+
+
+}
+
+.deposit-message.success {
+background: #dff7e8;
+color: #177a3c;
+}
+
+.deposit-message.error {
+background: #ffe2e2;
+color: #b42318;
+}
+
+/* =========================================
+SUCCESS POPUP OVERLAY
+========================================= */
+
+.deposit-success-overlay {
+position: fixed;
+
+
+top: 0;
+left: 0;
+
+width: 100%;
+height: 100vh;
+
+background: rgba(0, 0, 0, 0.35);
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+z-index: 999999;
+
+
+}
+
+/* =========================================
+SUCCESS MINI CARD
+========================================= */
+
+.deposit-success-mini-card {
+width: 420px;
+max-width: calc(100% - 40px);
+
+
+background: #ffffff;
+
+border-radius: 16px;
+
+padding: 30px;
+
+box-sizing: border-box;
+
+text-align: center;
+
+font-family: 'Noto Sans Bengali', sans-serif;
+
+box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+
+animation: popupShow 0.25s ease;
+
+
+}
+
+/* =========================================
+POPUP ANIMATION
+========================================= */
+
+@keyframes popupShow {
+
+
+from {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+to {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+}
+
+/* =========================================
+SUCCESS ICON
+========================================= */
+
+.success-icon {
+margin-bottom: 15px;
+
+
+font-size: 55px;
+
+color: #2ecc71;
+
+
+}
+
+/* =========================================
+SUCCESS TITLE
+========================================= */
+
+.deposit-success-mini-card h2 {
+margin: 0 0 10px;
+
+
+color: #333;
+
+font-family: 'Noto Sans Bengali', sans-serif;
+font-size: 24px;
+font-weight: 700;
+
+
+}
+
+/* =========================================
+SUCCESS DESCRIPTION
+========================================= */
+
+.deposit-success-mini-card p {
+margin: 0 0 25px;
+
+
+color: #777;
+
+font-family: 'Noto Sans Bengali', sans-serif;
+font-size: 15px;
+
+line-height: 1.6;
+
+}
+
+/* =========================================
+SUCCESS BUTTON CONTAINER
+========================================= */
+
+.success-buttons {
+display: flex;
+flex-direction: column;
+
+gap: 12px;
+
+
+}
+
+/* =========================================
+SUCCESS BUTTON CARDS
+========================================= */
+
+.success-buttons a {
+display: flex;
+
+
+justify-content: center;
+align-items: center;
+
+width: 100%;
+min-height: 50px;
+
+box-sizing: border-box;
+
+padding: 12px 15px;
+
+border-radius: 8px;
+
+text-decoration: none;
+
+font-family: 'Noto Sans Bengali', sans-serif;
+font-size: 16px;
+font-weight: 600;
+
+text-align: center;
+
+transition: 0.2s;
+
+}
+
+/* মাসের বিস্তারিত হিসাব */
+
+.btn-month-details {
+background: #2ecc71;
+color: #ffffff;
+}
+
+/* আরো টাকা জমা করুন */
+
+.btn-more-deposit {
+background: #f1f3f5;
+color: #333333;
+}
+
+/* ড্যাশবোর্ডে যান */
+
+.btn-dashboard {
+background: #e86060;
+color: #f7f1f1;
+
+
+border: 1px solid #dddddd;
+
+}
+
+/* BUTTON HOVER */
+
+.success-buttons a:hover {
+transform: translateY(-2px);
+opacity: 0.9;
+}
+
+/* =========================================
+MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+.deposit-page {
+    padding: 20px;
+}
+
+.deposit-form-card {
+    padding: 20px;
+}
+
+.deposit-success-mini-card {
+    width: 90%;
+    padding: 25px 20px;
+}
+
+.deposit-success-mini-card h2 {
+    font-size: 21px;
+}
+
+}
+
+/* =========================================
+SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+.deposit-page {
+    padding: 15px;
+}
+
+.deposit-form-card {
+    padding: 18px 15px;
+}
+
+.deposit-success-mini-card {
+    padding: 22px 15px;
+}
+
+.success-icon {
+    font-size: 45px;
+}
+
+.success-buttons a {
+    font-size: 15px;
+    min-height: 48px;
+}
+
+}

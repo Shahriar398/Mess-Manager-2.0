@@ -1,0 +1,380 @@
+/* =====================================
+   EXPENSE TABS
+===================================== */
+
+.expense-page {
+    padding: 30px;
+}
+
+.expense-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.expense-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.expense-tab {
+    flex: 1;
+    border: none;
+    padding: 14px;
+    background: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Noto Sans Bengali', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #777;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+.expense-tab.active {
+    background: #2ecc71;
+    color: white;
+}
+
+
+/* =====================================
+   FORM SHOW / HIDE
+===================================== */
+
+.expense-form-section {
+    display: none;
+}
+
+.expense-form-section.active-form {
+    display: block;
+}
+
+
+/* =====================================
+   FORM CARD
+===================================== */
+
+.expense-form-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+.expense-form-card h2 {
+    margin: 0 0 8px;
+    font-size: 20px;
+}
+
+.expense-description {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+
+/* =====================================
+   FORM GROUP
+===================================== */
+
+.expense-form-group {
+    margin-bottom: 20px;
+}
+
+.expense-form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.expense-form-group label span {
+    color: #888;
+    font-weight: 400;
+}
+
+.expense-form-group input,
+.expense-form-group textarea,
+.expense-form-group select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Noto Sans Bengali', sans-serif;
+    font-size: 15px;
+    outline: none;
+}
+
+.expense-form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.expense-form-group input:focus,
+.expense-form-group textarea:focus,
+.expense-form-group select:focus {
+    border-color: #2ecc71;
+}
+
+
+/* =====================================
+   CHECKBOX
+===================================== */
+
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.checkbox-row input {
+    width: 18px;
+    height: 18px;
+}
+
+
+/* =====================================
+   OTHER EXPENSE TEXT
+===================================== */
+
+.selected-expense-text {
+    padding: 15px;
+    background: #f7f7f7;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+/* =====================================
+   MEMBERS
+===================================== */
+
+.expense-members-list {
+    margin-bottom: 25px;
+}
+
+.expense-member {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px;
+    margin-bottom: 8px;
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.expense-member input {
+    width: 18px;
+    height: 18px;
+}
+
+.member-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ffe5e5;
+    color: #e74c3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+
+/* =====================================
+   SUBMIT BUTTON
+===================================== */
+
+.expense-submit-button {
+    width: 100%;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Noto Sans Bengali', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    background: #2ecc71;
+    color: white;
+}
+
+.expense-submit-button:hover {
+    opacity: 0.9;
+}
+
+.expense-alert {
+    padding: 12px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.expense-alert.success {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+}
+
+.expense-alert.error {
+    background: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+
+    .expense-page {
+        padding: 20px;
+    }
+
+    .expense-tabs {
+        gap: 8px;
+    }
+
+    .expense-tab {
+        font-size: 14px;
+        padding: 12px 8px;
+    }
+
+    .expense-form-card {
+        padding: 20px;
+    }
+
+}
+
+/* =========================================
+   OTHER EXPENSE MEMBER CHECKBOX
+========================================= */
+
+.expense-members-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.expense-member {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.expense-member:hover {
+    background: #f8f8f8;
+}
+
+/* =========================================
+   OTHER EXPENSE MEMBERS
+========================================= */
+
+.expense-members-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+
+/* =========================================
+   MEMBER ROW
+========================================= */
+
+.expense-member {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 12px 15px;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+/* Hover */
+
+.expense-member:hover {
+    background-color: #f8f8f8;
+}
+
+
+/* =========================================
+   AVATAR
+========================================= */
+
+.expense-member .member-avatar {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   MEMBER NAME
+========================================= */
+
+.expense-member .member-name {
+    margin-left: 12px;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    flex: 1;
+}
+
+
+/* =========================================
+   CHECKBOX
+========================================= */
+
+.expense-member .expense-member-checkbox {
+    order: 3;
+
+    width: 20px !important;
+    height: 20px !important;
+
+    margin-left: auto !important;
+    margin-right: 2px !important;
+
+    padding: 0 !important;
+
+    display: block !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    appearance: auto !important;
+    -webkit-appearance: checkbox !important;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
