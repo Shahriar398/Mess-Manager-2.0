@@ -6,6 +6,7 @@ Mess Manager 2.0 is a web-based application developed to simplify and manage dai
 
 This project was developed collaboratively by our team.
 
+
 ## Features
 
 - User Registration and Login
